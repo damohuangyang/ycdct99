@@ -23,7 +23,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --name ycdct99 main.py
+          pyinstaller --onefile --noconsole --name ycdct99 main.py
 
       - name: Create ZIP
         run: |
@@ -42,3 +42,4 @@ jobs:
         with:
           name: windows-zip
           path: ycdct99-windows.zip
+
