@@ -23,7 +23,8 @@ jobs:
 
       - name: Build EXE (GUI no console)
         run: |
-          pyinstaller --onefile --noconsole --name ycdct99 main.py
+         pyinstaller --onefile --noconsole --icon doctor_icon.ico --name ycdct99 main.py
+
 
       - name: Create ZIP
         run: |
